@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterUser.master.cs" Inherits="MasterUser" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            font-size: xx-large;
+            color: #CC33FF;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table cellpadding="15" cellspacing="5" class="style1">
+        <tr>
+            <td align="center" bgcolor="Silver" class="style2" colspan="6">
+                <strong style="font-family: 'Hobo Std'; text-decoration: blink;">VRSEC COLLEGE 
+                MAGAZINE</strong></td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="Silver">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/HomeUser.aspx">Home</asp:HyperLink>
+&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server"></asp:Label>
+            </td>
+            <td align="center" bgcolor="Silver">
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/EditUser.aspx">Edit Magazine</asp:HyperLink>
+            </td>
+            <td align="center" bgcolor="Silver">
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/ViewUser.aspx">Latest</asp:HyperLink>
+            </td>
+            <td align="center" bgcolor="Silver">
+                <asp:HyperLink ID="HyperLink6" runat="server" 
+                    NavigateUrl="~/AddMagazineUSer.aspx">Post into Magazine</asp:HyperLink>
+            </td>
+            <td align="center" bgcolor="Silver">
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/CommentUser.aspx">Post Comment</asp:HyperLink>
+            </td>
+            <td align="center" bgcolor="Silver">
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Home.aspx">Logout</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="Silver" colspan="6">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderUser" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="Silver">
+                VRSEC</td>
+            <td align="center" bgcolor="Silver">
+                Contact: 0866-2828282</td>
+            <td align="center" bgcolor="Silver" colspan="2">
+                <a href="mailto:vrsec@vrsec.ac.in">vrsec@vrsec.ac.in</a></td>
+            <td align="center" bgcolor="Silver">
+                http:\\facebook\vrsec\magzine</td>
+            <td align="center" bgcolor="Silver">
+                vrsec.twitter.in</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
